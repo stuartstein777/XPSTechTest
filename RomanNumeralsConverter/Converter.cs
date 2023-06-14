@@ -15,7 +15,7 @@ public static class Converter
         if (n is < 1 or > 2000)
             throw new ArgumentOutOfRangeException(nameof(n), "n must be between 1 and 2000 inclusive");
 
-        var conversions = new List<(int N, string RomanNumeral)>
+        var conversions = new List<(int, string)>
         {
             (1000, "M"),
             (900, "CM"),
