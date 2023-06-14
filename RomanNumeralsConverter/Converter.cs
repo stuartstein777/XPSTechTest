@@ -15,7 +15,7 @@ public static class Converter
         if (n is < 1 or > 2000)
             throw new ArgumentOutOfRangeException(nameof(n), "n must be between 1 and 2000 inclusive");
 
-        var keys = new List<(int N, string RomanNumeral)>
+        var conversions = new List<(int N, string RomanNumeral)>
         {
             (1000, "M"),
             (900, "CM"),
@@ -34,7 +34,7 @@ public static class Converter
 
         var result = new StringBuilder();
 
-        foreach (var (dec, romanNumeral) in keys)
+        foreach (var (dec, romanNumeral) in conversions)
         {
             var q = n / dec;
             for(var i = 0; i < q; i++)
