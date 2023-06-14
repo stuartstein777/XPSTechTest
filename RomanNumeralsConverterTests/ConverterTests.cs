@@ -2,47 +2,40 @@ using RomanNumeralsConverter;
 
 namespace RomanNumeralsConverterTests;
 
-public class Tests
+public class ConverterTests
 {
-    [Test]
-    public void ShouldCorrectlyConvertDecimalsToRomanNumerals()
+    [Test, 
+     TestCase(1, "I"),
+     TestCase(2, "II"),
+     TestCase(3, "III"),
+     TestCase(4, "IV"),
+     TestCase(5, "V"),
+     TestCase(9, "IX"),
+     TestCase(10, "X"),
+     TestCase(11, "XI"),
+     TestCase(14, "XIV"),
+     TestCase(15, "XV"),
+     TestCase(20, "XX"),
+     TestCase(23, "XXIII"),
+     TestCase(40, "XL"),
+     TestCase(50, "L"),
+     TestCase(90, "XC"),
+     TestCase(100, "C"),
+     TestCase(278, "CCLXXVIII"),
+     TestCase(400, "CD"),
+     TestCase(500, "D"),
+     TestCase(900, "CM"),
+     TestCase(999, "CMXCIX"),
+     TestCase(1000, "M"),
+     TestCase(1378, "MCCCLXXVIII"),
+     TestCase(1500, "MD"),
+     TestCase(1548, "MDXLVIII"),
+     TestCase(1999, "MCMXCIX"),
+     TestCase(2000, "MM")]
+    public void ShouldCorrectlyConvertDecimalsToRomanNumerals(int input, string expected)
     {
-        var expectedResults = new List<(int, string)>
-        {
-            (1, "I"),
-            (2, "II"),
-            (3, "III"),
-            (4, "IV"),
-            (5, "V"),
-            (9, "IX"),
-            (10, "X"),
-            (11, "XI"),
-            (14, "XIV"),
-            (15, "XV"),
-            (20, "XX"),
-            (23, "XXIII"),
-            (40, "XL"),
-            (50, "L"),
-            (90, "XC"),
-            (100, "C"),
-            (278, "CCLXXVIII"),
-            (400, "CD"),
-            (500, "D"),
-            (900, "CM"),
-            (999, "CMXCIX"),
-            (1000, "M"),
-            (1378, "MCCCLXXVIII"),
-            (1500, "MD"),
-            (1548, "MDXLVIII"),
-            (1999, "MCMXCIX"),
-            (2000, "MM")
-        };
-
-        foreach(var (test, expected) in expectedResults)
-        {
-            var actual = Converter.DecimalToRomanNumerals(test);
-            Assert.That(actual, Is.EqualTo(expected), $"Failed for {test}, got {actual}, expected {expected}");
-        }
+        var actual = Converter.DecimalToRomanNumerals(input);
+        Assert.That(actual, Is.EqualTo(expected), $"Failed for {input}, got {actual}, expected {expected}");
     }
 
     [Test]
