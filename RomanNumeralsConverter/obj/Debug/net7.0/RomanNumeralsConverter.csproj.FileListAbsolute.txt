@@ -1,0 +1,12 @@
+/home/stuart/Source/csharp/XpsTechTest/RomanNumeralsConverter/bin/Debug/net7.0/RomanNumeralsConverter.deps.json
+/home/stuart/Source/csharp/XpsTechTest/RomanNumeralsConverter/bin/Debug/net7.0/RomanNumeralsConverter.dll
+/home/stuart/Source/csharp/XpsTechTest/RomanNumeralsConverter/bin/Debug/net7.0/RomanNumeralsConverter.pdb
+/home/stuart/Source/csharp/XpsTechTest/RomanNumeralsConverter/obj/Debug/net7.0/RomanNumeralsConverter.csproj.AssemblyReference.cache
+/home/stuart/Source/csharp/XpsTechTest/RomanNumeralsConverter/obj/Debug/net7.0/RomanNumeralsConverter.GeneratedMSBuildEditorConfig.editorconfig
+/home/stuart/Source/csharp/XpsTechTest/RomanNumeralsConverter/obj/Debug/net7.0/RomanNumeralsConverter.AssemblyInfoInputs.cache
+/home/stuart/Source/csharp/XpsTechTest/RomanNumeralsConverter/obj/Debug/net7.0/RomanNumeralsConverter.AssemblyInfo.cs
+/home/stuart/Source/csharp/XpsTechTest/RomanNumeralsConverter/obj/Debug/net7.0/RomanNumeralsConverter.csproj.CoreCompileInputs.cache
+/home/stuart/Source/csharp/XpsTechTest/RomanNumeralsConverter/obj/Debug/net7.0/RomanNumeralsConverter.dll
+/home/stuart/Source/csharp/XpsTechTest/RomanNumeralsConverter/obj/Debug/net7.0/refint/RomanNumeralsConverter.dll
+/home/stuart/Source/csharp/XpsTechTest/RomanNumeralsConverter/obj/Debug/net7.0/RomanNumeralsConverter.pdb
+/home/stuart/Source/csharp/XpsTechTest/RomanNumeralsConverter/obj/Debug/net7.0/ref/RomanNumeralsConverter.dll
