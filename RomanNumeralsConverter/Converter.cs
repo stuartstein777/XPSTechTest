@@ -37,7 +37,8 @@ public static class Converter
         foreach (var (dec, romanNumeral) in keys)
         {
             var q = n / dec;
-            result.Append(string.Join("", Enumerable.Repeat(romanNumeral, q)));
+            for(var i = 0; i < q; i++)
+                result.Append(romanNumeral);
             n -= dec * q;
         }
         
